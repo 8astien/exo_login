@@ -39,3 +39,46 @@ h1 {
     color: #8E8E8E;
     font-size: 12px;
 }
+
+.login__form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-top: 1rem;
+}
+
+.login__form input {
+    margin: 0.5rem 0;
+    height: 45px;
+    border: 1px solid #E5E5E5;
+    border-radius: 12px;
+    padding: 0 2rem;
+}
+
+.login__form input::placeholder {
+    font-family: 'Poppins';
+}
+
+.input__email {
+    background-image: url('../assets/mail.svg');
+    background-repeat: no-repeat;
+    background-position: left 10px center;
+    background-size: 15px;
+}
+
+.input__pwd {
+    background-image: url('../assets/lock.svg');
+    background-repeat: no-repeat;
+    background-position: left 10px center;
+    background-size: 15px;
+}
+
+.form__btn {
+    background-color: #ff5833;
+    transition: all 120ms ease-in-out;
+    color: #FFF;
+}
+
+.form__btn:hover {
+    background-color: #ff3205;
+}

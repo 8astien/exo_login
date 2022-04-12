@@ -11,6 +11,11 @@
 	<main class="login">
 		<h1>{{ controller_name }}</h1>
 		<span class="login__details">Please input your login details to gain access.</span>
+        <form action="" class="login__form">
+            <input type="email" class="input__email" placeholder="Enter your login email">
+            <input type="password" class="input__pwd" placeholder="Enter your password">
+            <input type="submit" class="form__btn" value="Log in">
+        </form>
 	</main>
 
 {% endblock %}
