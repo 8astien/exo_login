@@ -1,11 +1,18 @@
 {% extends 'base.html.twig' %}
 
-{% block stylesheets %} {{ encore_entry_link_tags('profile') }} {% endblock %}
+{% block stylesheets %}
+	{{ encore_entry_link_tags('profile') }}
+{% endblock %}
 
 
-{% block title %}Your Profile!{% endblock %}
+{% block title %}Your Profile!
+{% endblock %}
 
 {% block body %}
-{{ controller_name }}
+    <main class="profile">
+		<h1>{{ controller_name }}</h1>
+	</main>
+
 
 {% endblock %}
+

@@ -1,10 +1,17 @@
 {% extends 'base.html.twig' %}
 
-{% block stylesheets %} {{ encore_entry_link_tags('login') }} {% endblock %}
+{% block stylesheets %}
+	{{ encore_entry_link_tags('login') }}
+{% endblock %}
 
-{% block title %}Welcome back !{% endblock %}
+{% block title %}Welcome back !
+{% endblock %}
 
 {% block body %}
-{{ controller_name }}
+	<main class="login">
+		<h1>{{ controller_name }}</h1>
+		<span class="login__details">Please input your login details to gain access.</span>
+	</main>
 
 {% endblock %}
+
