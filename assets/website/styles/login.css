@@ -18,8 +18,7 @@ body {
     font-family: 'Poppins';
     width: 33%;
     min-width: 360px;
-    height: 360px;
-    
+    height: 360px; 
     border-radius: 20px;
     box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.1);
     background-color: #FFF;
@@ -59,6 +58,10 @@ h1 {
     font-family: 'Poppins';
 }
 
+.login__form input:focus {
+    outline: 2px solid #ff5833;
+}
+
 .input__email {
     background-image: url('../assets/mail.svg');
     background-repeat: no-repeat;
@@ -74,6 +77,7 @@ h1 {
 }
 
 .form__btn {
+    margin-top: 1rem !important;
     background-color: #ff5833;
     transition: all 120ms ease-in-out;
     color: #FFF;

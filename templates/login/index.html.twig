@@ -2,20 +2,40 @@
 
 {% block stylesheets %}
 	{{ encore_entry_link_tags('login') }}
+
+{% endblock %}
+	
+{% block javascripts %}
+    <script>
+		function logIn() {
+        let inputtedID = document.getElementById('email').value
+        let inputtedPWD = document.getElementById('password').value;
+        if (inputtedID === 'admin@admin.com' && inputtedPWD === 'azerty') { 
+            window.location.href = "http://localhost:8000/profile";
+        } else { 
+            error != error;
+            // display error
+            alert("Wrong email or password")
+            }
+        }
+    </script>
 {% endblock %}
 
-{% block title %}Welcome back !
+
+{% block title %}Welcome back
 {% endblock %}
 
 {% block body %}
+
 	<main class="login">
 		<h1>{{ controller_name }}</h1>
+		{# Welcome Back #}
 		<span class="login__details">Please input your login details to gain access.</span>
-        <form action="" class="login__form">
-            <input type="email" class="input__email" placeholder="Enter your login email">
-            <input type="password" class="input__pwd" placeholder="Enter your password">
-            <input type="submit" class="form__btn" value="Log in">
-        </form>
+		<form class="login__form">
+			<input type="email" class="input__email" placeholder="Enter your login email" id='email'>
+			<input type="password" class="input__pwd" placeholder="Enter your password" id="password">
+            <input type="button" value="Log In" class="form__btn" onclick="logIn()">
+		</form>
 	</main>
 
 {% endblock %}
