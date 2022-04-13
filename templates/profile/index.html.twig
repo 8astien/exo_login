@@ -4,6 +4,23 @@
 	{{ encore_entry_link_tags('profile') }}
 {% endblock %}
 
+{% block javascripts %}
+    <script>
+		let newsletter = false
+		function displayText() {
+			let text = document.getElementById('newsletter__text')
+			newsletter = !newsletter 
+			if (newsletter === true) {
+				console.log(text)
+				text.style.display = 'inline'
+
+			} else {
+				console.log('false')
+				text.style.display = 'none'
+			}
+		}
+    </script>
+{% endblock %}
 
 {% block title %}Your Profile!
 {% endblock %}
@@ -32,7 +49,12 @@
 				<label for="phone">Phone</label>
 				<input type="tel" id="phone" name="phone">
 			</div>
-			<input type="button" value="Save Changes" class="profile__btn">
+			<div>
+				<label for="newsletter">Newsletter</label>
+				<input type="checkbox" name="newsletter" id="newsletter" onchange="displayText()">
+				<span id="newsletter__text">You wil now receive updates about our services !</span>	
+			</div>
+			<input type="button" value="Save Changes" class="profile__btn" onclick="alert('Changes have been saved !')">
 		</form>
 	</main>
 

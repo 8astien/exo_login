@@ -81,6 +81,7 @@ h1 {
     background-color: #ff5833;
     transition: all 120ms ease-in-out;
     color: #FFF;
+    font-weight: 600;
 }
 
 .form__btn:hover {

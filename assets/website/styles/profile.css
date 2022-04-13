@@ -37,11 +37,14 @@ h1 {
 .profile__form {
     width: 100%;
     padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .profile__form input {
     margin: 1rem 0;
-    height: 45px;
+    height: 40px;
     width: 75%;
     border: 1px solid #E5E5E5;
     border-radius: 12px;
@@ -52,6 +55,7 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
 }
 
 .profile__btn {
@@ -59,4 +63,24 @@ h1 {
     width: 100% !important;
     background-color: #ff5833;
     color: #FFF;
+    font-weight: 600;
+    width: 33% !important;
+}
+
+.profile__btn:hover {
+    background-color: #ff3205;
+}
+
+#newsletter__text {
+    display: none;
+    position: absolute;
+    left: 43%;
+    text-align: center;
+}
+
+#newsletter {
+    height: 30px;
+    width: 30px;
+    position: relative;
+    right: 70%;
 }
