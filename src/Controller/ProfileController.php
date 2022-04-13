@@ -8,13 +8,16 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class ProfileController extends AbstractController
 {
+   
     /**
      * @Route("/profile", name="profile")
      */
     public function index(): Response
     {
+        $newsletter_option = false;
         return $this->render('profile/index.html.twig', [
             'controller_name' => 'Your Profile',
         ]);
     }
+
 }
