@@ -1,7 +1,9 @@
-body,html {
+body,
+html {
     margin: 0;
     padding: 0;
 }
+
 * {
     box-sizing: border-box;
 }
@@ -14,13 +16,30 @@ body {
     align-items: center;
 }
 
+.logout {
+    font-family: 'Poppins';
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding: 5px 15px;
+    text-decoration: none;
+    color: #ff5833;
+    background-color: #FFF;
+    border-radius: 10px;
+}
+
+.logout:hover {
+    color: #FFF;
+    background: #ff5833;
+}
+
 .profile {
     font-family: 'Poppins';
     width: 50%;
     min-width: 360px;
     height: 80vh;
     border-radius: 20px;
-    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.1);
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.1);
     background-color: #FFF;
     display: flex;
     flex-direction: column;
